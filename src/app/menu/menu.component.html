@@ -1,3 +1,24 @@
-<p>
-  menu works!
-</p>
+<mat-toolbar color="primary">
+  <button class="hma"  mat-button [matMenuTriggerFor]="mobileMenu"><mat-icon>menu</mat-icon></button>
+  <mat-menu #mobileMenu="matMenu">
+    <button mat-menu-item class=" btn">Najnowsze</button>
+    <button mat-menu-item class=" btn">Kategorie</button>
+    <button mat-menu-item class=" btn">Jebnij posta</button>
+    <button mat-menu-item [matMenuTriggerFor]="menu">Profil</button>
+  </mat-menu>
+  <button mat-button class=" btn hmb">Najnowsze</button>
+  <button mat-button class=" btn hmb">Kategorie</button>
+  <button mat-button class=" btn hmb">Jebnij posta</button>
+  <button mat-button class="hmb" [matMenuTriggerFor]="menu">Profil</button>
+  <span class="example-fill-remaining-space"></span>
+  
+  <span>Right Aligned Text</span>
+  <mat-menu #mobile="matMenu">
+    <button mat-button [matMenuTriggerFor]="menu">Profil</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item class=" btn">Zaloguja</button>
+      <button mat-menu-item class=" btn">Zarejestruj się</button>
+    </mat-menu>
+  </mat-menu>
+  
+  </mat-toolbar>

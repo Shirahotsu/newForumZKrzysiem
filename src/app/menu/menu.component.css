@@ -1,0 +1,29 @@
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+.btn
+{
+  height: inherit;
+  font-size: 1.2em;
+}
+.hamburgerBtn{
+  font-size: 1.3em;
+}
+
+.mat-button{
+  height: inherit;
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 992px) {
+
+  .hmb {
+
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hma{
+    display: none;
+  }
+}
