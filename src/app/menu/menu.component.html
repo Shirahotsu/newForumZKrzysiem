@@ -3,15 +3,15 @@
   <mat-icon>menu</mat-icon>
 </button>
   <mat-menu #mobileMenu="matMenu">
-    <button mat-menu-item class=" btn"> <a routerLink="/najnowsze"  >Najnowsze</a></button>
-    <button mat-menu-item class=" btn"><a routerLink="/kategorie">Kategorie</a></button>
-    <button mat-menu-item class=" btn"><a routerLink="/nowyPost">Jebnij posta</a></button>
-    <button mat-menu-item class=" btn"[matMenuTriggerFor]="menu">Profil</button>
+    <a mat-menu-item class="btn" routerLink="/najnowsze"  >Najnowsze</a>
+    <a mat-menu-item class="btn" routerLink="/kategorie">Kategorie</a>
+    <a mat-menu-item class="btn" routerLink="/nowyPost">Jebnij posta</a>
+    <button mat-menu-item class="btn"[matMenuTriggerFor]="menu">Profil</button>
   </mat-menu>
 
-  <button mat-button class=" btn hmb"><a routerLink="/najnowsze"routerLinkActive="active">Najnowsze</a></button>
-  <button mat-button class=" btn hmb"><a routerLink="/kategorie">Kategorie</a></button>
-  <button mat-button class=" btn hmb"><a routerLink="/nowyPost">Jebnij posta</a></button>
+  <a mat-button class="btn hmb" routerLink="/najnowsze" routerLinkActive="">Najnowsze</a>
+  <a mat-button class="btn hmb" routerLink="/kategorie">Kategorie</a>
+  <a mat-button class="btn hmb" routerLink="/nowyPost">Jebnij posta</a>
   <button mat-button class="hmb" [matMenuTriggerFor]="menu">Profil</button>
   <span class="example-fill-remaining-space"></span>
   
@@ -19,8 +19,8 @@
   <mat-menu #mobile="matMenu">
     <button mat-button [matMenuTriggerFor]="menu">Profil</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item class=" btn" ><a routerLink="/logowanie">Zaloguja</a></button>
-      <button mat-menu-item class=" btn" ><a routerLink="/rejestracja">Zarejestruj się</a></button>
+      <a mat-menu-item class=" btn" routerLink="/logowanie">Zaloguja</a>
+      <a mat-menu-item class=" btn" routerLink="/rejestracja">Zarejestruj się</a>
     </mat-menu>
   </mat-menu>
   

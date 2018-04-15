@@ -1,6 +1,6 @@
 
-<div *ngFor="let p of posty; let i of index">
-  <div class="container">
-    <mat-card>{{p.header}}</mat-card>
+<div class="container">
+  <div *ngFor="let p of posty; let i of index">
+      <mat-card class="newPost bg-deep-purple-300" >{{p.header}}</mat-card>
   </div>
 </div>

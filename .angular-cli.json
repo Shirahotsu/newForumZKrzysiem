@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "customTheme.scss"
+        "customTheme.scss",
+	"colors.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
