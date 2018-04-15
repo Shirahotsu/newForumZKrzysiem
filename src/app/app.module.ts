@@ -7,16 +7,55 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-
+import { RouterModule, Routes } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
+import { NewestPostsComponent } from './newest-posts/newest-posts.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { AddPostComponent } from './add-post/add-post.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
+
+
+const routes: Routes = [
+  {
+    path: '',
+    component: NewestPostsComponent
+  },
+  {
+  path: 'najnowsze',
+  component: NewestPostsComponent
+  },
+  {
+    path: 'kategorie',
+    component: CategoriesComponent
+  },
+  {
+    path: 'nowyPost',
+    component: AddPostComponent
+  },
+  {
+    path: 'logowanie',
+    component: LoginFormComponent
+  },
+  {
+    path: 'rejestracja',
+    component: RegisterFormComponent
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
+    NewestPostsComponent,
+    CategoriesComponent,
+    AddPostComponent,
+    LoginFormComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +65,9 @@ import { MenuComponent } from './menu/menu.component';
     MatMenuModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule.forRoot(routes),
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
