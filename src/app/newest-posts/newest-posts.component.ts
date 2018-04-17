@@ -15,7 +15,8 @@ export class NewestPostsComponent implements OnInit {
       },
       {
         id: 2,
-        header: "Jokaaaa"
+        header: "123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789"
+        // 80 znaków MAX
       },
       {
         id: 3,

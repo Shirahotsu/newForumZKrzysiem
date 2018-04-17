@@ -1,6 +1,7 @@
 
 <div class="container">
-  <div *ngFor="let p of posty; let i of index">
-      <mat-card class="newPost bg-deep-purple-300" >{{p.header}}</mat-card>
-  </div>
+  <mat-card class="newPost bg-deep-purple-300" *ngFor="let p of posty; let i of index">
+    <mat-card-title class="color-white"><a routerLink="/najnowsze">{{p.header}}</a></mat-card-title>
+    <mat-card-subtitle>User Date Category</mat-card-subtitle>
+  </mat-card>
 </div>

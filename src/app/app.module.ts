@@ -9,6 +9,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Routes } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -17,6 +19,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { SandboxComponent } from './sandbox/sandbox.component';
 
 
 
@@ -44,6 +47,10 @@ const routes: Routes = [
   {
     path: 'rejestracja',
     component: RegisterFormComponent
+  },
+  {
+    path: 'hui',
+    component: SandboxComponent
   }
 ];
 
@@ -55,7 +62,8 @@ const routes: Routes = [
     CategoriesComponent,
     AddPostComponent,
     LoginFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    SandboxComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +75,9 @@ const routes: Routes = [
     MatInputModule,
     MatIconModule,
     RouterModule.forRoot(routes),
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

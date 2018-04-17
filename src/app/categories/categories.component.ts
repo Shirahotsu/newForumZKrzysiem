@@ -6,8 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-
-  constructor() { }
+kategorie:string[];
+  constructor() {
+    this.kategorie=[
+      "Muzyka",
+      "Gry",
+      "Dokumentalne",
+      "Moda",
+      "Sport",
+      "Motoryzacja",
+      "Filozofia",
+      "Religia",
+      "Elektronika",
+      "Vlogi",
+      "Śmieszne",
+      "Nauka",
+      "Przyroda",
+      "Gastronomia",
+    ]
+   }
 
   ngOnInit() {
   }
