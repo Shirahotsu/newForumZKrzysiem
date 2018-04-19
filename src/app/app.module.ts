@@ -49,9 +49,9 @@ const routes: Routes = [
     component: RegisterFormComponent
   },
   {
-    path: 'hui',
+    path: 'sandbox',
     component: SandboxComponent
-  }
+  },
 ];
 
 @NgModule({
