@@ -7,14 +7,12 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  elo:any
-  constructor(private http: HttpClient) {
-    this.http.get('http://jsonplaceholder.typicode.com/posts').subscribe(data => {
+  elo:any;
+  constructor(public http: HttpClient) {
+    this.http.get("aa").subscribe(data => {
       console.log(data);
   });
    }
-
   ngOnInit() {
   }
-
 }
