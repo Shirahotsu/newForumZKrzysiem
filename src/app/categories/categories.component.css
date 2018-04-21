@@ -1,8 +1,35 @@
 .catTile
 {
   border-radius: 3px;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.catTileContent:hover {
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  background-color: transparent;
 }
 .padding
 {
   padding-top: 50px;
+}
+.catTileContent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.header{
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.3em;
+}
+.catIcon{
+  position: absolute;
+  top:30px;
+font-size: 69px;
 }
