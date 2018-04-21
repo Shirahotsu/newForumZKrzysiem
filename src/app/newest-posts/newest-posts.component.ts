@@ -25,6 +25,55 @@ export class NewestPostsComponent implements OnInit {
       {
         id: 4,
         header: "Dzban"
+      },
+      {
+        id: 1,
+        header: "elo"
+      },
+      {
+        id: 2,
+        header: "123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789"
+        // 80 znaków MAX
+      },
+      {
+        id: 3,
+        header: "Karooool"
+      }, {
+        id: 1,
+        header: "elo"
+      },
+      {
+        id: 2,
+        header: "123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789"
+        // 80 znaków MAX
+      },
+      {
+        id: 3,
+        header: "Karooool"
+      }, {
+        id: 1,
+        header: "elo"
+      },
+      {
+        id: 2,
+        header: "123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789"
+        // 80 znaków MAX
+      },
+      {
+        id: 3,
+        header: "Karooool"
+      }, {
+        id: 1,
+        header: "elo"
+      },
+      {
+        id: 2,
+        header: "123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789"
+        // 80 znaków MAX
+      },
+      {
+        id: 3,
+        header: "Karooool"
       }
     ]
 

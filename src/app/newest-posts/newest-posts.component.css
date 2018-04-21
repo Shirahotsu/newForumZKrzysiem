@@ -1,6 +1,13 @@
 .newPost{
   margin: 20px 0;
   /* background-color: #7e57c2; */
+  border-color: #9E9E9E;
+}
+.postHeader:hover{
+  cursor: pointer;
+}
+.postHeader:focus{
+outline: none;
 }
 a {
   color: inherit;
