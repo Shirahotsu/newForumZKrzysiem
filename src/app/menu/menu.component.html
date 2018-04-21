@@ -1,4 +1,27 @@
-<mat-toolbar color="primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-deep-purple-600">
+  <a class="navbar-brand" href="#">FORUM</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav color-white">
+      <li>
+        <a class="nav-link" routerLink="/najnowsze">Najnowsze</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/kategorie">Kategorie</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/nowyPost">Jebnij posta</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- <mat-toolbar color="primary">
 <button class="hma" mat-button [matMenuTriggerFor]="mobileMenu">
   <mat-icon>menu</mat-icon>
 </button>
@@ -25,4 +48,4 @@
     </mat-menu>
   </mat-menu>
   
-  </mat-toolbar>
+  </mat-toolbar> -->
