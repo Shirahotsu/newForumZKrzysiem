@@ -1,5 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-deep-purple-600">
-  <a class="navbar-brand" href="#">FORUM</a>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-deep-purple-500">
+<a class="navbar-brand" routerLink="/">FORUM</a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
     aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,14 +8,27 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav color-white">
       <li>
-        <a class="nav-link" routerLink="/najnowsze">Najnowsze</a>
+      <a class="nav-link" routerLink="/najnowsze" routerLinkActive="active-link">Najnowsze</a>
       </li>
       <li>
-        <a class="nav-link" routerLink="/kategorie">Kategorie</a>
+        <a class="nav-link" routerLink="/kategorie" routerLinkActive="active-link">Kategorie</a>
       </li>
       <li>
-        <a class="nav-link" routerLink="/nowyPost">Jebnij posta</a>
+        <a class="nav-link" routerLink="/nowyPost" routerLinkActive="active-link">Jebnij posta</a>
       </li>
+      <li>
+        <div class="nav-link dropdown">
+          <a class="dropdown-toggle cp" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Dropdown button
+        </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" routerLink="/logowanie">Zaloguj</a>
+            <a class="dropdown-item" routerLink="/rejestracja">Zarejestruj się</a>
+            <a class="dropdown-item" routerLink="/sandbox">Sandbox</a>
+          </div>
+        </div>
+        </li>
     </ul>
   </div>
 </nav>

@@ -8,10 +8,16 @@
   display: flex;
   align-items: center;
 }
+.active-link{
+  font-size: 24px;
+}
 .navbar-dark .navbar-nav .nav-link {
 
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 1.2em;
+}
+.cp:hover{
+  cursor: pointer;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
 
